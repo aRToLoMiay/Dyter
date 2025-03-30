@@ -1,0 +1,5 @@
+Download process:
+- Output info from console to widgets.
+- Add break option.
+Project:
+- Add release version.
