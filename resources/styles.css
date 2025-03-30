@@ -1,0 +1,186 @@
+/* ------------------------------------------------------------ */
+/* 		Main style settings										*/
+/* ------------------------------------------------------------ */
+
+QWidget {
+    background-color: #252525;
+    color: #E6E6E6;
+	font: bold;
+    font-family: "Verdana";
+    font-size: 12pt;
+    margin: 6px;
+}
+ 
+QComboBox, 
+QGroupBox, 
+QLineEdit, 
+QProgressBar, 
+QPushButton, 
+QTextEdit {
+	border-width: 2px;
+	border-style: solid;
+	border-color: #353535;
+	border-radius: 4px;
+}
+
+/* ------------------------------------------------------------ */
+/* 		QCheckBox		 										*/
+/* ------------------------------------------------------------ */
+
+QCheckBox {
+    spacing: 5px;
+}
+
+QCheckBox::indicator {
+    background-color: #252525;
+	border-width: 2px;
+	border-style: solid;
+	border-color: #353535;
+	border-radius: 4px;
+    height: 16px;
+    width: 16px;
+}
+
+QCheckBox::indicator:checked {
+    image: url(resources/img/done_24dp_FFFFFF.svg);
+    background-color: #4CAF50;
+    border-color: #4CAF50;
+}
+
+QCheckBox::indicator:unchecked {
+    background-color: #252525;
+    border-color: #353535;
+}
+
+QCheckBox::indicator:unchecked:hover {
+    background-color: #404040;
+}
+
+/* ------------------------------------------------------------ */
+/* 		QComboBox		 										*/
+/* ------------------------------------------------------------ */
+QComboBox {
+    padding: 8px;
+}
+
+QComboBox::drop-down {
+    subcontrol-origin: padding;
+    subcontrol-position: top right;
+    width: 20px;
+}
+
+QComboBox QAbstractItemView {
+    background-color: #252525;
+    color: #E6E6E6;
+    selection-background-color: #454545;
+    selection-color: #E6E6E6;
+}
+
+/* ------------------------------------------------------------ */
+/* 		QGroupBox	 										*/
+/* ------------------------------------------------------------ */
+
+QGroupBox {
+	border-color: #353535;
+	border-width: 2px;
+}
+
+QGroupBox:title {
+    subcontrol-origin: margin;
+	left: 20px;
+}
+
+/* ------------------------------------------------------------ */
+/* 		QLineEdit	 										*/
+/* ------------------------------------------------------------ */
+
+QLineEdit {
+    padding: 0 8px;
+}
+
+QLineEdit:hover {
+	background-color: #404040;
+}
+
+QLineEdit:disabled {
+	background: #353535;
+	color: #757575;
+}
+
+/* ------------------------------------------------------------ */
+/* 		QProgressBar	 										*/
+/* ------------------------------------------------------------ */
+
+QProgressBar {
+    text-align: center;
+}
+
+/* ------------------------------------------------------------ */
+/* 		QPushButton		 										*/
+/* ------------------------------------------------------------ */
+
+QPushButton {
+	min-width: 10em;
+	padding: 6px;
+}
+
+QPushButton:disabled {
+	background: #353535;
+	color: #757575;
+}
+
+QPushButton:hover {
+    background-color: #454545;
+}
+
+QPushButton:pressed {
+    background-color: #2a2a2a;
+}
+
+/* ------------------------------------------------------------ */
+/* 		QScrollBar		 										*/
+/* ------------------------------------------------------------ */
+QScrollBar:vertical, 
+QScrollBar:horizontal {
+    background-color: transparent;
+    width: 12px;
+    margin: 0px 0px 0px 0px;
+}
+
+QScrollBar::handle:vertical,
+QScrollBar::handle:horizontal {
+    background-color: #353535;
+    min-height: 20px;
+    border-radius: 5px;
+}
+
+QScrollBar::add-line:vertical,
+QScrollBar::sub-line:vertical,
+QScrollBar::add-line:horizontal,
+QScrollBar::sub-line:horizontal {
+    background: none;
+}
+
+QScrollBar::add-page:vertical,
+QScrollBar::sub-page:vertical,
+QScrollBar::add-page:horizontal,
+QScrollBar::sub-page:horizontal {
+    background: none;
+}
+
+/* ------------------------------------------------------------ */
+/* 		QTextEdit		 										*/
+/* ------------------------------------------------------------ */
+
+QTextEdit {
+    padding: 0 8px;
+}
+
+QTextEdit:hover {
+	background-color: #404040;
+}
+
+QTextEdit:disabled {
+	background: #353535;
+	color: #757575;
+}
