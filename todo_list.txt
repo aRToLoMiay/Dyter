@@ -1,5 +1,6 @@
 Download process:
 - Output info from console to widgets.
 - Add break option.
+- Add playlist download.
 Project:
 - Add release version.
