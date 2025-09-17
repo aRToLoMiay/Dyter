@@ -34,10 +34,6 @@ class VideoDownloader:
             'outtmpl': '%(title)s.%(ext)s',  # Шаблон имени файла
             'ffmpeg_location': self._get_ffmpeg_path(), # Указываем путь к ffmpeg
             'quiet': True,  # Отключаем вывод лишней информации
-            'postprocessors': [{
-                'key': 'FFmpegVideoConvertor',  # Конвертировать видео в MP4 (если нужно)
-                'preferedformat': 'mp4',
-            }],
         }
         return self._download(options)
 
